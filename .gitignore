@@ -1,6 +1,13 @@
 # Prerequisites
 *.d
 
+.idea
+.idea/*
+
+.vscode
+
+cmake-build-debug
+
 # Object files
 *.o
 *.ko
