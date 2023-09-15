@@ -106,10 +106,8 @@ void SQLXQuery_free(SQLXQuery *query) {
         free(query->database);
     if (query->table)
         free(query->table);
-    for (int i = 0; i < query->options.size; i++) {
+    for (int i = 0; i < query->options.size; i++)
         SQLXOption_free(&query->options.data[i]);
-        free(&query->options.data[i]);
-    }
     free(query);
 }
 
